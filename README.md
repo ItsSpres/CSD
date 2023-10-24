@@ -1,2 +1,2 @@
-# csd-310
+# CSD
 For CSD310 class
