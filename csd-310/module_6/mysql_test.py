@@ -9,9 +9,10 @@ config = {
     "raise_on_warnings": True
 }
 
-try: 
+try:
     db = mysql.connector.connect(**config)
-    print("\n database user {} connected to mysql on host {} with database {}".format(config{"user"}, config{"host"}, config{"database"}))
+    print("\nDatabase user {} connected to MySQL on host {} with database {}".format(config["user"], config["host"], config["database"]))
+
     input("\n\n press any key to cont...")
 except mysql.connector.Error as err:
     print(err)
