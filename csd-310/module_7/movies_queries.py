@@ -6,6 +6,7 @@
 
 import mysql.connector
 
+
 # Function to connect to the MySQL database
 def connect_to_database():
     config = {
