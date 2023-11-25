@@ -1,3 +1,9 @@
+# Ian Spresney
+# 11/25/2023
+# CSD310
+# Module 7.2
+# Sources: https://www.w3schools.com/python/python_mysql_getstarted.asp
+
 import mysql.connector
 
 # Function to connect to the MySQL database
