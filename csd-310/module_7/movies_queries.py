@@ -45,19 +45,19 @@ def main():
 
             # Query 1: Select all fields from the studio table
             query1 = "SELECT * FROM studio;"
-            execute_query(cursor, query1, "Query 1: Select all fields from the studio table")
+            execute_query(cursor, query1, "-- DISPLAYING Studio RECORDS --")
 
             # Query 2: Select all fields from the genre table
             query2 = "SELECT * FROM genre;"
-            execute_query(cursor, query2, "Query 2: Select all fields from the genre table")
+            execute_query(cursor, query2, "-- DISPLAYING Genre RECORDS --")
 
             # Query 3: Select movie names for movies with a run time of less than two hours
-            query3 = "SELECT movie_name FROM movies WHERE run_time < 120;"
-            execute_query(cursor, query3, "Query 3: Movie names for movies with a run time of less than two hours")
+            query3 = "SELECT film_name FROM film WHERE film_runtime < 120;"
+            execute_query(cursor, query3, "-- DISPLAYING Short Film RECORDS --")
 
             # Query 4: Get a list of film names and directors ordered by director
-            query4 = "SELECT film_name, director FROM movies ORDER BY director;"
-            execute_query(cursor, query4, "Query 4: List of film names and directors ordered by director")
+            query4 = "SELECT film_director FROM film ORDER BY film_director;"
+            execute_query(cursor, query4, "-- DISPLAYING Director RECORDS in Order --")
 
         except mysql.connector.Error as err:
             print("Error: {}".format(err))
